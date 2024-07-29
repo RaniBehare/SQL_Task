@@ -1,0 +1,4 @@
+-- TaskOne
+-- create a db with a table name student
+
+CREATE database testDB;
