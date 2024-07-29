@@ -1,0 +1,33 @@
+-- 1.Create a db and tables
+-- create a new db called
+
+create database school_management;
+use school_management;
+
+create table students(student_id int, first_name varchar(20), last_name varchar(20), email varchar(20), phone_number varchar(10), date_of_birth date);
+
+create table courses(course_id int, course_name varchar(20), course_description varchar(20), credits int);
+
+desc students;
+alter table students add grade varchar(20);
+desc students;
+
+-- 3. Insert data into tables
+insert into students values(101,"Ram","Abc","ram1@gmail.com", "9878765678",'2000-11-11',"A");
+insert into students values(102,"Seeta","Pqr","seeta2@gmail.com", "7888765678",'2001-10-01',"B");
+insert into students values(103,"Krishna","Abc","krishna3@gmail.com", "8888765678",'2001-08-21',"A");
+insert into students values(104,"Seeta","Pqr","seeta4@gmail.com", "7943265678",'2000-11-11',"B");
+
+desc courses;
+insert into courses values(1001,"Java", "Widely used OOP language", 3);
+insert into courses values(1002,"AWS", "Amazon Web Services", 2);
+insert into courses values(1004,"AI", "Artificial Intelligence", 4);
+insert into courses values(1005,"ML", "Machine Learning", 4);
+insert into courses values(1003,"IOT", "Internate of Things", 3);
+
+-- 4. Query data
+select first_name, last_name, email from students;
+
+-- 5. Drop object
+drop table student;
+drop database school_management;
