@@ -1,0 +1,15 @@
+-- TaskOne
+-- create a db with a table name student
+
+CREATE database testDB;
+
+use testDB;
+create table student( s_id int, s_name varchar(30), s_age int);
+
+-- insert values into table
+insert into student values(1, "Ram", 21);
+insert into student values(2, "Shayam", 22);
+insert into student values(3, "Seeta", 23),(4,"Geeta", 24);
+
+-- write sql query to display all records present in student table
+select * from student;
